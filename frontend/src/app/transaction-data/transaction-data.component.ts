@@ -24,14 +24,14 @@ export class TransactionDataComponent implements OnInit {
     { valor: null, data: null, categoria: '', username: '' }
   ];
 
-  categorias: any[] = []; // Adicionando array para armazenar categorias
+  categorias: any[] = [];
   public urlTransacao = 'http://localhost:8080/transacao';
   public urlBuscarCategoria = 'http://localhost:8080/categoria';
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.getCategorias(); // Chame a função getCategorias ao iniciar o componente
+    this.getCategorias();
   }
 
   getCategorias() {
