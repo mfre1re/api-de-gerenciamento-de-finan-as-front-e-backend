@@ -1,0 +1,120 @@
+label {
+    font-size: 1rem;
+    color: #2d3436;
+}
+
+input, select {
+    margin: 5px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c5ce7;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input:focus, select:focus{
+    color: #6c5ce7;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+button {
+    background-color: #6c5ce7;
+    border-radius: 20px;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 10px auto;
+    padding: 10px 12px;
+    text-align: center;
+    display: flex;
+}
+
+button:hover {
+    background-color: #74b9ff;
+}
+
+tr, th, td {
+    display: block;
+    padding: 0;
+    text-align: center;
+    white-space: normal;
+}
+
+tr {
+    background-color: #dfe6e9;
+    display: table-row;
+}
+
+th, td {
+    color: #2d3436;
+    padding: .5em;
+    display: table-cell;
+}
+
+th {
+    font-weight: bolder;
+    color: #2d3436;
+}
+
+td {
+    color: #6c5ce7;
+}
+
+button.action__btn {
+    background-color: #ffeaa7;
+}
+
+button.action__btn:hover {
+    background-color: #99968b;
+}
+
+.section__title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #0984e3;
+}
+
+#pagination {
+    display: flex;
+    align-items: center;
+}
+
+#pagination > p {
+    margin: auto 25px;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+}
+
+#btn > button {
+    margin: auto 3px;
+}
+
+#transation__listing, #transation__editing {
+    background-color: white;
+    border-radius: .25rem;
+    width: 900px;
+    margin: 20px 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

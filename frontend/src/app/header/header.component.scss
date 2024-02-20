@@ -1,0 +1,28 @@
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #0984e3;
+}
+
+p {
+    font-style: italic;
+    color: #b2bec3;
+}
+
+span {
+    font-style: italic;
+    font-weight: 500;
+}
+
+#intro {
+    background-color: white;
+    border-radius: .25rem;
+    width: 900px;
+    margin: 20px 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

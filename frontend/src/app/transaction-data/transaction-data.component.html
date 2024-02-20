@@ -1,0 +1,77 @@
+<div id="single__transation">
+  <h3 class="section__title">Nova entrada</h3>
+  <p>Entre com as informações da transação.</p>
+
+  <form (submit)="salvarTransacao('unico')" method="post">
+    <!-- Campos para inserir transação individualmente -->
+    <table>
+      <thead>
+        <tr>
+          <th>Valor</th>
+          <th>Data</th>
+          <th>Categoria</th>
+          <th>Usuário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input [(ngModel)]="valor" name="spentValue" type="number" step="0.01" placeholder="Informe o valor" required>
+          </td>
+          <td>
+            <input [(ngModel)]="data" name="spentDate" type="date" required>
+          </td>
+          <td>
+            <select [(ngModel)]="categoria" name="spentCategory" required>
+              <option value="">Selecione uma categoria</option>
+              <option *ngFor="let cat of categorias" [value]="cat.id">{{ cat.categoria }}</option>
+            </select>
+          </td>
+          <td>
+            <input [(ngModel)]="username" name="spentUsername" type="text" placeholder="Informe o usuário" required>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="salvarTransacao('unico')"> Salvar </button>
+  </form>
+</div>
+
+<div id="batch__transation">
+  <h3 class="section__title">Entradas em Lote</h3>
+  <p>Entre com as informações da transação em lote.</p>
+
+  <form *ngIf="categorias.length > 0" (submit)="salvarTransacao('lote')" method="post">
+    <!-- Campos para inserir transação em lote -->
+    <table>
+      <thead>
+        <tr>
+          <th>Valor</th>
+          <th>Data</th>
+          <th>Categoria</th>
+          <th>Usuário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let linha of linhasTransacao; let i = index">
+          <td>
+            <input [(ngModel)]="linha.valor" name="spentValue" type="number" step="0.01" placeholder="Informe o valor" required>
+          </td>
+          <td>
+            <input [(ngModel)]="linha.data" name="spentDate" type="date" required>
+          </td>
+          <td>
+            <select [(ngModel)]="linha.categoria" name="spentCategory" required>
+              <option value="">Selecione uma categoria</option>
+              <option *ngFor="let cat of categorias" [value]="cat.id">{{ cat.categoria }}</option>
+            </select>
+          </td>
+          <td>
+            <input [(ngModel)]="linha.username" name="spentUsername" type="text" placeholder="Informe o usuário" required>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="salvarTransacao('lote')"> Salvar </button>
+  </form>
+</div>

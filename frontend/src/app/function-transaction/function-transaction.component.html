@@ -1,0 +1,24 @@
+<!-- function-transaction.component.html -->
+
+<div id="transation__query">
+  <h3 class="section__title">Funcionalidade de Somar Transações</h3>
+
+  <label for="categoria">Categoria</label>
+  <select [(ngModel)]="categoriaSoma" name="spentCategory" required>
+    <option value="">Selecione uma categoria</option>
+    <option *ngFor="let cat of categorias" [value]="cat.id">{{ cat.categoria }}</option>
+  </select>
+
+  <label for="usuario">Usuário ID</label>
+  <input type="number" id="usuario" [(ngModel)]="userId" name="userId" required>
+
+  <button type="button" (click)="somarTransacoesPorCategoriaEUsuarioId()">Somar Transações</button>
+
+  <!-- Exibir a soma total se estiver disponível -->
+  <div id="output__query" *ngIf="somaTotal !== null">
+    <p>Soma Total das Transações:
+        <span>R$ {{ somaTotal }}</span>.
+    </p>
+  </div>
+</div>
+

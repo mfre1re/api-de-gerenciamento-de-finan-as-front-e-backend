@@ -1,0 +1,15 @@
+<div id="registration">
+  <h3 class="section__title">Cadastro de Usuário</h3>
+  <form (submit)="cadastrarUsuario()">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" [(ngModel)]="username" name="nome" placeholder="Digite o seu nome..." required>
+    <br>
+    <label for="email">Email </label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Digite o seu e-mail..." required>
+    <br>
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" [(ngModel)]="password" name="senha" placeholder="Digite uma senha..." required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>

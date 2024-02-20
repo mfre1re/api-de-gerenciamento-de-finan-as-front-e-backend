@@ -1,0 +1,62 @@
+<div id="transation__listing">
+  <h3 class="section__title">Listagem de Transações</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Valor</th>
+        <th>Data</th>
+        <th>Categoria</th>
+        <th>Usuário</th>
+        <th>Editar</th>
+        <th>Apagar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transacao of transacoes">
+        <td>{{ transacao.id }}</td>
+        <td>{{ 'R$ ' + transacao.valor }}</td>
+        <td>{{ transacao.data }}</td>
+        <td>{{ transacao.categoria.categoria }}</td>
+        <td>{{ transacao.username.username }}</td>
+        <td><button class="action__btn" type="button" (click)="atualizarTransacao(transacao)">✏️</button></td>
+        <td><button class="action__btn" type="button" (click)="deletarTransacao(transacao.id)">❌</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Adicione controles de paginação -->
+  <div id="pagination">
+      <button (click)="anteriorPagina()" [disabled]="paginaAtual === 1">Anterior</button>
+      <p>Página {{ paginaAtual }} de {{ totalPaginas }}</p>
+      <button (click)="proximaPagina()" [disabled]="paginaAtual === totalPaginas">Próxima</button>
+  </div>
+  
+  <br>
+  <div id="btn">
+    <button (click)="buscarTransacoes()">Atualizar</button>
+    <button type="button" (click)="deletarTodasAsTransacoes()">Deletar Todas as Transações</button>
+  </div> 
+</div>
+
+<div id="transation__editing" *ngIf="formulario">
+  <h3 class="section__title">Editar Transação</h3>
+  <form (submit)="confirmarAtualizacao()">
+    <label for="#">ID:</label>
+    <input [(ngModel)]="transacaoSelecionada.id" name="id" type="text" readonly>
+    <br>
+    <label for="#">Valor R$:</label>
+    <input [(ngModel)]="transacaoSelecionada.valor" name="valorAtualizado" type="number" step="0.01" placeholder="Informe o valor" required>
+    <br>
+    <label for="#">Data:</label>
+    <input [(ngModel)]="transacaoSelecionada.data" name="dataAtualizada" type="date" required>
+    <br>
+    <label for="#">Selecione a categoria: </label>
+      <select [(ngModel)]="transacaoSelecionada.categoria.id" name="spentCategory" required>
+        <option value="">Selecione uma categoria</option>
+        <option *ngFor="let cat of categorias" [value]="cat.id">{{ cat.categoria }}</option>
+      </select>
+    <br>
+    <button type="submit">Atualizar Transação</button>
+  </form>
+</div> 
