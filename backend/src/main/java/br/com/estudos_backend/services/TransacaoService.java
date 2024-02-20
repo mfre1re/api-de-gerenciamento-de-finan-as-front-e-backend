@@ -46,12 +46,9 @@ public class TransacaoService {
     }
 
     public List<TransacaoEntity> somarTransacoesPorCategoriaEUsuario(Integer categoriaId, Integer usuarioId) {
-        // Verifica se ambos os parâmetros estão presentes
         if (categoriaId != null && usuarioId != null) {
-            // Realiza a filtragem por categoria e usuário
             return transacaoRepository.findByCategoriaIdAndUsernameId(categoriaId, usuarioId);
         } else {
-            // Retorna uma lista vazia se algum dos parâmetros estiver ausente
             return Collections.emptyList();
         }
     }
