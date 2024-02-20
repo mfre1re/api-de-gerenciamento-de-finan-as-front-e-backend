@@ -3,7 +3,6 @@
   <p>Entre com as informações da transação.</p>
 
   <form (submit)="salvarTransacao('unico')" method="post">
-    <!-- Campos para inserir transação individualmente -->
     <table>
       <thead>
         <tr>
@@ -42,7 +41,6 @@
   <p>Entre com as informações da transação em lote.</p>
 
   <form *ngIf="categorias.length > 0" (submit)="salvarTransacao('lote')" method="post">
-    <!-- Campos para inserir transação em lote -->
     <table>
       <thead>
         <tr>
