@@ -1,6 +1,6 @@
 # API Controle de Transação e Gerenciamento de Finanças V1.0
 
-# Utilização local
+# Gerenciamento de Finanças (Backend)
 Para utilização deste projeto na máquina local basta que seja realizado um clone do repositório `git@github.com:mfre1re/api-de-gerenciamento-de-financas-front-e-backend.git`. 
 Após o clone, abra o terminal, vá até o caminho onde está localizado o pom.xml e execute: `mvn clean install` para instalar as bibliotecas externas do projeto.
 
@@ -145,3 +145,16 @@ O projeto está organizado em devidos pacotes "br.com.estudos_backend" sendo est
   - `email` (String): Email de cadastro do usuário.
   - `password` (String): Senha do usuário.
   - `username` (String): Nome do usuário.
+
+
+ # Gerenciamento de Finanças (Frontend)
+
+O frontend é a parte do sistema que vai interagir com o usuário e é responsável pela apresentação, interface gráfica e interatividade. Nesta API utilizamos alguns recursos importantes listados abaixo:
+
+## Frameworks e Bibliotecas Utilizadas
+- [Angular](https://angular.io/): Framework para desenvolvimento de aplicativos web em TypeScript/JavaScript.
+- [RxJS](https://rxjs.dev/): Biblioteca para programação reativa usando Observables.
+- [Node.js](https://nodejs.org/): Ambiente de execução para JavaScript/TypeScript do lado do servidor.
+- [Karma](https://karma-runner.github.io/): Ferramenta de teste de unidade para JavaScript.
+- [Jasmine](https://jasmine.github.io/): Framework de teste de comportamento para JavaScript.
+
