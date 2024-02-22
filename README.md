@@ -153,7 +153,7 @@ O frontend é a parte do sistema que vai interagir com o usuário e é responsá
 
 ## Frameworks e Bibliotecas Utilizadas
 - [Angular](https://angular.io/): Framework para desenvolvimento de aplicativos web em TypeScript/JavaScript.
-- [RxJS](https://rxjs.dev/): Biblioteca para programação reativa usando Observables.
+- [Express](https://expressjs.com/en/starter/installing.html): Um framework web rápido para Node.js.
 - [Node.js](https://nodejs.org/): Ambiente de execução para JavaScript/TypeScript do lado do servidor.
 - [Karma](https://karma-runner.github.io/): Ferramenta de teste de unidade para JavaScript.
 - [Jasmine](https://jasmine.github.io/): Framework de teste de comportamento para JavaScript.
