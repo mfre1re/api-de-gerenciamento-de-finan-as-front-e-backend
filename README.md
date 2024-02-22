@@ -54,3 +54,27 @@ O backend é a parte estrutural responsável por processar as requisições CRUD
   
 ![image](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/681c7431-7665-4c1a-ac05-f3b873776323)
 </details>
+
+### 8. Listar Usuários
+<details><sumary>Endpoint: GET /usuario</sumary>(http://localhost:8080/usuario): Retorna todos os usuários cadastrados no banco de dados.
+
+![image](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/beb39e56-7ecc-4a08-a6cd-dd54a7eb0264)
+</details>
+
+### 9. Cadastrar Usuários
+<details><sumary>Endpoint: POST /usuario</sumary>(http://localhost:8080/usuario): Cadastra um usuário no banco de dados com email, password(senha) e username(nome).
+
+![image](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/4dbb1dc0-f3be-49b5-b014-8320be2e7759)
+</details>
+
+### 10. Atualizar Usuários por ID
+<details><sumary>Endpoint: POST /usuario/atualiza</sumary>(http://localhost:8080/usuario/atualiza): Atualiza dados de um usuário com base no ID passado no corpo da requisição.
+
+![image](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/f2f5d586-79b5-4f04-b3f7-12400beabfb4)
+</details>
+
+### 11. Deletar Usuário por ID
+<details><sumary>Endpoint: DELETE /usuario?id={id}</sumary>(http://localhost:8080/usuario?id=4): Deleta todos os dados de um usuário com base no seu ID.
+
+![image](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/55a70bf5-d880-4eb4-aa68-2fa9907b78fc)
+</details>
