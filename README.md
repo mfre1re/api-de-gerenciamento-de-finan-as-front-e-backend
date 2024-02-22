@@ -125,3 +125,23 @@ O projeto está organizado em devidos pacotes "br.com.estudos_backend" sendo est
      *3. UsuarioService* - gerencia a lógica de negócios relacionadas aos usuários. Busca interagir com o `UsuarioRepository` para realizar
             as operações no banco de dados.
 
+## Entendendo os dados
+### TransacaoEntity
+- **Atributos:**
+  - `id` (Integer): Identificador único da transação.
+  - `valor` (double): Valor da transação.
+  - `data` (LocalDate): Data da transação.
+  - `categoria` (CategoriaEntity){id}: Categoria associada a transação.
+  - `username` (UsuarioEntity){id}: Usuário associado a transação.
+
+### CategoriaEntity
+- **Atributos:**
+  - `id` (Integer): Identificador único da categoria.
+  - `categoria` (String): Nome da categoria.
+
+### UsuarioEntity
+- **Atributos:**
+  - `id` (Integer): Identificador único do usuário.
+  - `email` (String): Email de cadastro do usuário.
+  - `password` (String): Senha do usuário.
+  - `username` (String): Nome do usuário.
