@@ -1,4 +1,4 @@
-# API Controle de Transacao e Gerenciamento de Finanças V1.0
+# API Controle de Transação e Gerenciamento de Finanças V1.0
 
 # Utilização local
 Para utilização deste projeto na máquina local basta que seja realizado um clone do repositório `git@github.com:mfre1re/api-de-gerenciamento-de-financas-front-e-backend.git`. 
