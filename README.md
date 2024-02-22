@@ -78,3 +78,50 @@ O backend é a parte estrutural responsável por processar as requisições CRUD
 
 ![image](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/55a70bf5-d880-4eb4-aa68-2fa9907b78fc)
 </details>
+
+
+## Estruturação
+O projeto está organizado em devidos pacotes "br.com.estudos_backend" sendo estruturado assim os seguintes pacotes:
+
+  *CorsConfig* - para permitir que o backend receba solicitações de diferentes origens.
+  
+- controllers:
+  
+     *1. Categoria* - gerencia as operações relacionadas as categorias de transações.
+
+     *2. Transacao* - trata as operações relacionadas às transações financeiras fornecendo endpoints para realizar operações CRUD (Create, Read, Update, 
+                   Delete) sobre as transações.
+  
+     *3. Usuario* - Trata das operações relacionadas aos usuário tal como cadastrar, listar e deletar usuário.
+  
+- entities:
+
+     *1. CategoriaEntity* - representa uma categoria associada as transações.
+  
+     *2. TransacaoEntity* - representa uma transação financeira no sistema.
+  
+     *3. UsuarioEntity* - representa o banco de dados de um usuário no sistema.
+  
+- repositories:
+  
+     *1. CategoriaRepository* - gerencia as operações relacionadas as categorias no banco de dados. Assim como o `TransacaoRepository`, ele estende a interface   
+                `JpaRepository`. 
+  
+     *2. TransacaoRepository* - interage com o banco de dados para operações relacionadas às transações financeiras. Ele estende a interface `JpaRepository` do 
+                Spring Data JPA, fornecendo métodos para realizar operações. Importante notar a criação de alguns métodos para a função de paginação e filtragem
+                das transações baseados na categoria e no ID de usuário.
+
+     *3. UsuarioRepository* - interage com o banco de dados para operações relacionadas aos Usuários. Estende a interface `JpaRepository` do 
+                Spring Data JPA, fornecendo métodos para realizar estas operações.
+     
+- services:
+  
+     *1.CategoriaService* - gerencia a lógica de negócios associadada as categorias de transações. Assim como o `TransacaoService`, ele interage com o 
+            `CategoriaRepository` para realizar operações no banco de dados.
+
+     *2.TransacaoService* - encapsula a lógica de negócios relacionada as transações financeiras interagindo com o `TransacaoRepository` para
+            realizar as operações no banco de dados. 
+
+     *3. UsuarioService* - gerencia a lógica de negócios relacionadas aos usuários. Busca interagir com o `UsuarioRepository` para realizar
+            as operações no banco de dados.
+
