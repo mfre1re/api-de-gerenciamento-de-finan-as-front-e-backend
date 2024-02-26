@@ -175,5 +175,16 @@ Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `n
 
 ### Para inserir várias transações (também aceita inserção de apenas uma):
 ![Inserir Várias Transações](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/7898137f-caa1-47b7-9ff4-e4ae6be99586)
+</details>
 
+<details><summary>Atualizar transação, deletar transação:</summary>
+
+### Nota que após realizar um cadastro, podemos atualizar com o botão para aparecer na listagem de transações
+![Deletar uma transação, atualizar transação](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/c1581cf2-781a-48bb-ba1e-bcfa03315ef8)
+</details>
+
+<details><summary>Somar transações filtrando por categoria e ID do usuário:</summary>
+
+### Nota que após realizar um cadastro, podemos atualizar com o botão para aparecer na listagem de transações
+![Somar Transações](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/739ab8e1-2720-4ccf-aed3-4190d860ceba)
 </details>
