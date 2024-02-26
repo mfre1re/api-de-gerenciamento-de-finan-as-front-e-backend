@@ -161,3 +161,10 @@ O frontend é a parte do sistema que vai interagir com o usuário e é responsá
 ## Instalação
 Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `npm install` para que todas as dependências e biliotecas utilizadas sejam instaladas.
 
+## Utilizando o Aplicativo
+
+<details><summary>Realizando cadastro de Usuários:</summary>
+  
+![Cadastrar Usuário](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/8cd6cad5-04f4-47fb-bea5-a81a7ef39945)
+</details>
+
