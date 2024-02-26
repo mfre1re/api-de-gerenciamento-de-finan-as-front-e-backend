@@ -185,6 +185,5 @@ Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `n
 
 <details><summary>Somar transações filtrando por categoria e ID do usuário:</summary>
 
-### Nota que após realizar um cadastro, podemos atualizar com o botão para aparecer na listagem de transações
 ![Somar Transações](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/739ab8e1-2720-4ccf-aed3-4190d860ceba)
 </details>
