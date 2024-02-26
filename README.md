@@ -168,3 +168,12 @@ Feito o clone do projeto, no diretório do frontend, abra o terminal e digite `n
 ![Cadastrar Usuário](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/8cd6cad5-04f4-47fb-bea5-a81a7ef39945)
 </details>
 
+<details><summary>Inserção de uma ou mais transações:</summary>  
+
+### Para uma transação:
+![Inserir uma Transação](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/e78c8f5a-01a1-4876-8e68-0cf33332639a)
+
+### Para inserir várias transações (também aceita inserção de apenas uma):
+![Inserir Várias Transações](https://github.com/mfre1re/api-de-gerenciamento-de-financas-front-e-backend/assets/88170132/7898137f-caa1-47b7-9ff4-e4ae6be99586)
+
+</details>
